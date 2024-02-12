@@ -1,2 +1,2 @@
 # Cotizacion
- plaatilla cotizacion empresa electricidad
+ plantilla cotizacion empresa electricidad
