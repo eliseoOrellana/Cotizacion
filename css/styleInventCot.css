@@ -58,7 +58,10 @@ body {
      background: white;
      padding: 25px 30px;
      border-radius: 5px;
-
+     margin-bottom: 20px; /* Agregar margen inferior */
+     display: flex; /* Alinear contenido en el centro */
+     flex-direction: column; /* Alinear contenido en el centro */
+     align-items: center; /*
 }
 
 
