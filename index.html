@@ -42,7 +42,7 @@
     <!-- header navbar-->
     <header>
 
-        
+
 
 
         <h1 id="titulo-tabla">Cotizacion de productos y servicios</h1>
@@ -50,18 +50,18 @@
             <form id="cotizacionForm">
                 <div class="form-group">
                     <label for="clienteInput">Cliente:</label>
-                    <input type="text" class="form-control" id="clienteInput" name="clienteInput" >
-        
+                    <input type="text" class="form-control" id="clienteInput" name="clienteInput">
+
                 </div>
                 <div class="form-group">
                     <label for="nombreProyecto">Nombre del Proyecto:</label>
-                    <input type="text" class="form-control" id="nombreProyecto" name="nombreProyecto" >
+                    <input type="text" class="form-control" id="nombreProyecto" name="nombreProyecto">
                 </div>
                 <div class="form-group">
                     <label for="productoInput">Producto:</label>
-            <input type="text" class="form-control" id="productoInput" name="productoInput">
- 
-                    
+                    <input type="text" class="form-control" id="productoInput" name="productoInput">
+
+
                 </div>
                 <div class="form-group">
                     <label for="cantidad">Cantidad:</label>
@@ -69,7 +69,7 @@
                 </div>
                 <div class="form-group">
                     <label for="valorUnitario">Valor Unitario:</label>
-                    <input type="number" class="form-control" id="valorUnitario" name="valorUnitario" >
+                    <input type="number" class="form-control" id="valorUnitario" name="valorUnitario">
                 </div>
                 <button type="button" class="btn btn-primary" id="agregarDetalleBtn">Agregar Producto</button>
                 <div class="form-group">
@@ -89,40 +89,41 @@
                     <h2>Detalles de la Cotización</h2>
                 </div>
 
-                <table class="table">
-                    <thead class="table-secondary">
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Producto o Servicio</th>
-                            <th scope="col">Cantidad</th>
-                            <th scope="col">Precio Unitario</th>
-                            <th scope="col">Subtotal</th>
-                            <th scope="col">Opciones</th>
-                        </tr>
-                    </thead>
-                    <tbody id="cotizacionTableBody">
-                        <!-- Aquí se agregarán los detalles de la cotización dinámicamente -->
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><strong>Total sin IVA:</strong></td>
-                            <td><span id="totalSinIva">0.00</span></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><strong>Total con IVA:</strong></td>
-                            <td><span id="totalConIva">0.00</span></td>
-                            <td></td>
-                        </tr>
-                    </tfoot>
-                </table>
-
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead class="table-secondary">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Producto o Servicio</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Precio Unitario</th>
+                                <th scope="col">Subtotal</th>
+                                <th scope="col">Opciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cotizacionTableBody">
+                            <!-- Aquí se agregarán los detalles de la cotización dinámicamente -->
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><strong>Total sin IVA:</strong></td>
+                                <td><span id="totalSinIva">0.00</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><strong>Total con IVA:</strong></td>
+                                <td><span id="totalConIva">0.00</span></td>
+                                <td></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
                 <div class="form-group">
                     <label for="condicionesPago">Condiciones de Pago:</label>
                     <textarea class="form-control" id="condicionesPago" name="condicionesPago" rows="3"></textarea>
@@ -147,7 +148,7 @@
         <div class="separador"></div><!--separador-->
 
         <!--footer-->
-        <footer class="footer dark-mode bg-dark pt-5 pb-4 pb-lg-5" id="footer" >
+        <footer class="footer dark-mode bg-dark pt-5 pb-4 pb-lg-5" id="footer">
             <div class="container pt-4">
                 <div class="d-flex flex-sm-row flex-column align-items-center justify-content-between text-center text-md-start pt-4 border-top border-light"
                     id="lineaFinal">
