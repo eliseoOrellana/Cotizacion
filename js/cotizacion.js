@@ -126,6 +126,19 @@ function eliminarFila(button) {
 }
 
 function generarYDescargarPDF() {
+
+    const cotizacionTableBody = document.getElementById("cotizacionTableBody");
+
+    // Verificar si la tabla de cotización está vacía
+    if (cotizacionTableBody.rows.length === 0) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'No hay detalles de productos o servicios para generar la cotización.'
+        });
+        return; // Salir de la función si la tabla está vacía
+    }
+
     const pdf = new jsPDF();
     const empresa = "Empresa Eléctricas TCE";
     const telefono = "Celular: +569 94194876";
